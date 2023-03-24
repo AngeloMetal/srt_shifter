@@ -34,3 +34,6 @@ This is a test subtitle file.
 00:00:15,500 --> 00:00:20,000
 It contains three subtitle entries.
 ```
+
+## TODO:
+- Float instead of integers in seconds.
