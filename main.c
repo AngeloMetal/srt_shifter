@@ -19,7 +19,7 @@ int main(int argc, char **argv){
     char buffer[100];
     while(fgets(buffer, sizeof(buffer), file) != NULL){
         int hh, mm, ss;
-        char *temp = malloc(9 * sizeof(char));
+        char *temp = calloc(9, sizeof(char));
         if(sscanf(buffer, "%2d:%2d:%2d", &hh, &mm, &ss) == 3){
             // time before '-->'
             strncpy(temp, buffer, 8);
